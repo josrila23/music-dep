@@ -3093,7 +3093,7 @@ body.is-preload #header.alt {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url("../../images/banner.png");
+  background-image: url("../img/banner.png");
   display: -moz-flex;
   display: -ms-flex;
   display: -webkit-box;
