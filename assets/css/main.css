@@ -108,7 +108,10 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 }
 
 /* Type */
-body, input, select, textarea {
+body,
+input,
+select,
+textarea {
   color: #ffffff;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-size: 17pt;
@@ -118,19 +121,28 @@ body, input, select, textarea {
 }
 
 @media screen and (max-width: 1680px) {
-  body, input, select, textarea {
+  body,
+  input,
+  select,
+  textarea {
     font-size: 14pt;
   }
 }
 
 @media screen and (max-width: 1280px) {
-  body, input, select, textarea {
+  body,
+  input,
+  select,
+  textarea {
     font-size: 12pt;
   }
 }
 
 @media screen and (max-width: 360px) {
-  body, input, select, textarea {
+  body,
+  input,
+  select,
+  textarea {
     font-size: 11pt;
   }
 }
@@ -152,12 +164,14 @@ a:active {
   color: #53e3fb !important;
 }
 
-strong, b {
+strong,
+b {
   color: #ffffff;
   font-weight: 600;
 }
 
-em, i {
+em,
+i {
   font-style: italic;
 }
 
@@ -165,14 +179,24 @@ p {
   margin: 0 0 2em 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #ffffff;
   font-weight: 600;
   line-height: 1.65;
   margin: 0 0 1em 0;
 }
 
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
   color: inherit;
   border-bottom: 0;
 }
@@ -3423,6 +3447,91 @@ body.is-preload #banner > .inner {
   border-radius: 1rem;
   width: 100%;
   height: 10rem;
+}
+
+.unidades {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.unidades .unidad {
+  background-color: #e7b788;
+  padding: 2rem;
+  border-radius: 1rem;
+  border-bottom: none;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.unidades .unidad:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: inherit !important;
+}
+
+.unidades .unidad p {
+  margin: 0;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.contenido-unidad {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.contenido-unidad a {
+  border-bottom: none;
+}
+
+.contenido-unidad a:hover {
+  color: unset !important;
+}
+
+.contenido-unidad .bloque {
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+  transition: -webkit-transform .3s ease-in-out;
+  transition: transform .3s ease-in-out;
+  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+}
+
+.contenido-unidad .bloque:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.contenido-unidad .pdf {
+  background-color: #ec8d81;
+}
+
+.contenido-unidad .video {
+  max-width: 100%;
+}
+
+.contenido-unidad .pptx {
+  background-color: #e7b788;
 }
 
 /* Footer */
